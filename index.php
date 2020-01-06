@@ -22,13 +22,9 @@ error_reporting(E_ALL);
 <body>
     <h1>Pair Program</h1>
     <?php
+    include ("functions.php");
     $numbers = array(7,9,8,9,8,8,6);
 
-    function printArr($array){
-        foreach ($array as $num) {
-            echo "$num <br>";
-        }
-    }
     printArr($numbers);
     ?>
 </body>
