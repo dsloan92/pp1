@@ -20,7 +20,17 @@ error_reporting(E_ALL);
     <title>Pair Program</title>
 </head>
 <body>
-<h1>Pair Program</h1>
+    <h1>Pair Program</h1>
+    <?php
+    $numbers = array(7,9,8,9,8,8,6);
+
+    function printArr($array){
+        foreach ($array as $num) {
+            echo "$num <br>";
+        }
+    }
+    printArr($numbers);
+    ?>
 </body>
 </html>
 
