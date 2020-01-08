@@ -28,6 +28,7 @@ error_reporting(E_ALL);
     printArr($numbers);
     $max = largest($numbers);
     echo "<br>".$max;
+    removeDups($numbers);
     ?>
 </body>
 </html>
