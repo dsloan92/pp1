@@ -29,9 +29,16 @@ function removeDups($array){
     foreach ($array2 as $num) {
         echo "$num <br>";
     }
+}
 
+function distribution($array){
 
+    $array2 = array();
+    $occurences = array_count_values($array);
 
-
+    foreach ($array as $num){
+        $array2[$num] = $occurences[$num];
+    }
+    return $array2;
 }
 

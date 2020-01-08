@@ -24,11 +24,17 @@ error_reporting(E_ALL);
     <?php
     include ("functions.php");
     $numbers = array(7,9,8,9,8,8,6);
-
+    $counts = distribution($numbers);
+    echo "Printing of Initial Array <br>";
     printArr($numbers);
     $max = largest($numbers);
     echo "<br>".$max;
+    echo "Array with no duplicates: <br>";
     removeDups($numbers);
+    foreach ($counts as $key => $value){
+        echo "Key: $key, Value: $value <br>";
+    }
+
     ?>
 </body>
 </html>
